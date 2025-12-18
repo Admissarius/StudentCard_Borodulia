@@ -1,4 +1,6 @@
 <Solution>
+  <Project Path="CurrencyConverter/CurrencyConverter.csproj" />
   <Project Path="HybridApplicationXAMLandCSharp/HybridApplicationXAMLandCSharp.csproj" />
+  <Project Path="SimpleCalculator/SimpleCalculator.csproj" />
   <Project Path="StudentCard_Borodulia/StudentCard_Borodulia.csproj" />
 </Solution>
