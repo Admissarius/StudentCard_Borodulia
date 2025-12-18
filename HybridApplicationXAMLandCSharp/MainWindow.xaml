@@ -1,0 +1,31 @@
+﻿<Window x:Class="HybridApplicationXAMLandCSharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HybridApplicationXAMLandCSharp"
+        mc:Ignorable="d"
+        Title="Гибридное приложение" Height="450" Width="800">
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Статический заголовок -->
+        <TextBlock Grid.Row="0" Text="Динамические элементы управления"
+                   FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" 
+                   Margin="10" Background="LightBlue" Padding="10"/>
+
+        <!-- Контейнер для динамических элементов -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="DynamicContentPanel" Margin="10"/>
+        </ScrollViewer>
+
+        <!-- Статический нижний колонтитул -->
+        <Border Grid.Row="2" Background="LightGray" Padding="5">
+            <TextBlock Text="злементы созданы программно" HorizontalAlignment="Center"/>
+        </Border>
+    </Grid>
+</Window>

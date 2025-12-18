@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="HybridApplicationXAMLandCSharp/HybridApplicationXAMLandCSharp.csproj" />
+  <Project Path="StudentCard_Borodulia/StudentCard_Borodulia.csproj" />
+</Solution>
